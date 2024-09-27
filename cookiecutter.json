@@ -1,6 +1,6 @@
 {
   "_settings_folder_name": "settings",
-  "project_name": "Mon nouveau projet",
+  "project_name": "My new project",
   "config_dir": "{{ cookiecutter.project_name.lower() | trim() |replace(' ', '_') }}",
   "__config_dir": "{{ cookiecutter.config_dir | trim('/') | trim('\\\\') | replace('/', '.') | replace('\\\\', '.') }}",
   "author_name": "Thierry Chappuis",
@@ -10,21 +10,21 @@
   "login_url": "login",
   "login_redirect_url": "",
   "logout_redirect_url": "",
-  "language": "fr",
+  "language": "en",
   "timezone": "UTC",
   "use_wagtail": false,
   "__prompts__": {
-    "project_name": "Quel est le nom de votre projet ?",
-    "config_dir": "Dans quelle répertoire se trouve votre fichier wsgi.py ? (Chemin relatif depuis la racine du projet Django)",
-    "author_name": "Quel est votre nom ?",
-    "domain_name": "Quel est le nom de domaine de votre projet ?",
-    "email": "Quel est votre email ?",
-    "user_model": "Quel est le modèle utilisateur que vous utilisez ?",
-    "login_url": "Quel est le nom de votre url de login ?",
-    "login_redirect_url": "Vers quelle url voulez-vous rediriger l'utilisateur après un login ? (nom de l'url)",
-    "logout_redirect_url": "Vers quelle url voulez-vous rediriger l'utilisateur après un logout ? (nom de l'url)",
-    "language": "Quelle est la langue utilisée par votre application web (fr, us-en, etc.) ?",
-    "timezone": "Quel est le fuseau horaire de votre application (UTC, Europe/Paris, Europe/Zurich, etc.) ?",
-    "wagtail": "Utilisez-vous le CMS Wagtail dans votre projet ?"
+    "project_name": "What is the name of your project?",
+    "config_dir": "In which directory is your wsgi.py file located? (Relative path from the root of the Django project)",
+    "author_name": "What is your name?",
+    "domain_name": "What is the domain name of your project?",
+    "email": "What is your email?",
+    "user_model": "Which user model are you using?",
+    "login_url": "What is the name of your login URL?",
+    "login_redirect_url": "Which URL do you want to redirect the user to after login? (URL name)",
+    "logout_redirect_url": "Which URL do you want to redirect the user to after logout? (URL name)",
+    "language": "What is the language used by your web application (en, fr, etc.)?",
+    "timezone": "What is the timezone of your application (UTC, Europe/Paris, Europe/Zurich, etc.)?",
+    "use_wagtail": "Are you using the Wagtail CMS in your project?"
   }
 }

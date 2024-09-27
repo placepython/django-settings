@@ -29,8 +29,8 @@ def set_django_secret_key(file_path):
 def set_flags_in_settings_files():
     set_django_secret_key("base.py")
     set_django_secret_key("dev.py")
-    set_django_secret_key("_env.dev.exemple")
-    set_django_secret_key("_env.prod.exemple")
+    set_django_secret_key("_env.dev.example")
+    set_django_secret_key("_env.prod.example")
 
 
 def main():
@@ -43,31 +43,31 @@ def main():
         "django-debug-toolbar",
     ]
 
-    print(HINT + "1. Ajouter les dépedances suivante à votre projet: " + TERMINATOR)
+    print(HINT + "1. Add the following dependencies to your project: " + TERMINATOR)
     for package in packages:
         print(HINT + f"- {package} " + TERMINATOR)
     print()
     print(
         HINT
-        + "2. Copier _env.dev.exemple ou _env.prod.exemple à la racine de votre projet et renommez-le en .env"
+        + "2. Copy _env.dev.example or _env.prod.example to the root of your project and rename it to .env"
         + TERMINATOR
     )
     print()
     print(
         HINT
-        + '3. Ajouter path("__debug__/", include("debug_toolbar.urls")) à vos urls'
+        + '3. Add path("__debug__/", include("debug_toolbar.urls")) to your urls'
         + TERMINATOR
     )
     print()
     print(
         SUCCESS
-        + "Vos fichiers de configuration sont prêts ! Déplacer le répertoire settings généré dans {{ cookiecutter.config_dir | trim('\\') }} {{ cookiecutter.__config_dir }}"
+        + "Your configuration files are ready! Move the generated settings directory to {{ cookiecutter.config_dir | trim('\\') }} {{ cookiecutter.__config_dir }}"
         + TERMINATOR
     )
     print()
     print(
         SUCCESS
-        + "Ajouter `from {{ cookiecutter.__config_dir }} import settings` dans manage.py, wsgi.py et asgi.py"
+        + "Add `from {{ cookiecutter.__config_dir }} import settings` in manage.py, wsgi.py, and asgi.py"
         + TERMINATOR
     )
 

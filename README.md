@@ -1,19 +1,14 @@
-# Générateur de settings Django avec commentaires en français
+# Django Settings Generator with Comments in French
 
-Ce template Cookiecutter a pour objectif de générer un répertoire de settings séparés Django pour
-les environnements de développement et de production.
+This Cookiecutter template aims to generate a Django settings directory separated for development and production environments.
 
-Chaque variable de configuration est commentée en français pour permettre à tout débutant
-francophone de démarrer rapidement avec leurs premiers déploiement.
+Each configuration variable is commented in French to help French-speaking beginners quickly get started with their first deployment.
 
-## Génération du répertoire de settings:
+## Generating the Settings Directory:
 
-La procédure suivante vous permettra de générer des settings personnalisés séparés pour le dev et
-la production. Vous aurez besoin de l'outil Cookiecutter que vous pouvez installer au préalable
-à l'aide de la commande `pip install cookiecutter`. Vous pouvez également utiliser cookiecutter
-sans installation si vous l'utilisez [uv](https://docs.astral.sh/uv/) en préfixant les commandes par uvx.
+The following procedure will allow you to generate separate customized settings for development and production. You will need the Cookiecutter tool, which you can install beforehand using the command `pip install cookiecutter`. You can also use Cookiecutter without installation if you use [uv](https://docs.astral.sh/uv/) by prefixing the commands with `uvx`.
 
-1. Ouvrir un terminal à la racine de votre projet Django.
-2. Générer un répertoire de settings à l'aide de la commande `cookiecutter gh:placepython/django-settings-fr`
-3. Répondez aux questions posées
-4. Suivez les instructions affichées dans le terminal à la fin de l'installation
+1. Open a terminal at the root of your Django project.
+2. Generate a settings directory using the command `cookiecutter gh:placepython/django-settings-fr`
+3. Answer the questions asked.
+4. Follow the instructions displayed in the terminal at the end of the installation.
