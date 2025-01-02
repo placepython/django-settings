@@ -41,10 +41,12 @@ ALLOWED_HOSTS = env.list(
 # - SMTP with STARTTLS: smtp+tls://USER:PASSWORD@HOST:PORT
 # - Console: consolemail://
 # https://docs.djangoproject.com/en/5.1/ref/settings/
-EMAIL_BACKEND = env.email(
+EMAIL_CONFIG = env.email(
     "DJANGO_EMAIL_URL",
     default="consolemail://",
 )
+globals().update(**EMAIL_CONFIG)
+
 
 # DJANGO-DEBUG-TOOLBAR
 # The Django Debug Toolbar is a debugging tool that integrates with Django to
